@@ -1,0 +1,25 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuljkanovicAmir/restaurant-page.git"
+  },
+  "author": "Amir Suljkanović",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuljkanovicAmir/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/SuljkanovicAmir/restaurant-page#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
