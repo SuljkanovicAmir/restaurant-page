@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    devtool: 'source-map',
     entry: './src/index.js',
     output: {
         filename: 'main.js',
@@ -11,6 +12,7 @@ module.exports = {
           {
             test: /\.(woff|woff2|eot|ttf|otf)$/i,
             type: 'asset/resource',
+            use: ["source-map-loader"],
           },
         ],
       },
