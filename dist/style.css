@@ -1,13 +1,12 @@
 @font-face {
     font-family: 'Unica One';
-    src: url('../src/UnicaOne-Regular.ttf') format('truetype'),
-        url('../src/news-cycle.regular.ttf') format('truetype');
+    src: url('UnicaOne-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
   }
   @font-face {
     font-family: 'News Cycle';
-    src: url('../src/news-cycle.regular.ttf') format('truetype');
+    src: url('news-cycle.regular.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
   }

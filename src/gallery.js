@@ -11,78 +11,78 @@ function createGalleryPage () {
     galleryDiv.appendChild(galleryItem);
 
     galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery1.jpg)'
+        'url(../dist/images/gallery-images/gallery1.jpg)'
     ))
     
    
 
     galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery2.jpg)'
+        'url(../dist/images/gallery-images/gallery2.jpg)'
     ))
 
 
     galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery3.jpg)'
+        'url(../dist/images/gallery-images/gallery3.jpg)'
     ))
 
 
     galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery4.jpg)'
+        'url(../dist/images/gallery-images/gallery4.jpg)'
     ))
 
 
     galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery5.jpg)'
-    ))
-    
-    galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery6.jpg)'
-    ))
-
-
-    galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery7.jpg)'
-    ))
-
-
-    galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery8.jpg)'
-    ))
-
-    galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery9.jpg)'
-    ))
-
-
-    galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery10.jpg)'
-    ))
-
-
-    galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery11.jpg)'
-    ))
-
-    galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery12.jpg)'
+        'url(../dist/images/gallery-images/gallery5.jpg)'
     ))
     
     galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery13.jpg)'
+        'url(../dist/images/gallery-images/gallery6.jpg)'
     ))
 
 
     galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery14.jpg)'
+        'url(../dist/images/gallery-images/gallery7.jpg)'
     ))
 
 
     galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery15.jpg)'
+        'url(../dist/images/gallery-images/gallery8.jpg)'
     ))
 
     galleryItem.appendChild(createGalleryItem(
-        'url(../src/images/gallery-images/gallery16.jpg)'
+        'url(../dist/images/gallery-images/gallery9.jpg)'
+    ))
+
+
+    galleryItem.appendChild(createGalleryItem(
+        'url(../dist/images/gallery-images/gallery10.jpg)'
+    ))
+
+
+    galleryItem.appendChild(createGalleryItem(
+        'url(../dist/images/gallery-images/gallery11.jpg)'
+    ))
+
+    galleryItem.appendChild(createGalleryItem(
+        'url(../dist/images/gallery-images/gallery12.jpg)'
+    ))
+    
+    galleryItem.appendChild(createGalleryItem(
+        'url(../dist/images/gallery-images/gallery13.jpg)'
+    ))
+
+
+    galleryItem.appendChild(createGalleryItem(
+        'url(../dist/images/gallery-images/gallery14.jpg)'
+    ))
+
+
+    galleryItem.appendChild(createGalleryItem(
+        'url(../dist/images/gallery-images/gallery15.jpg)'
+    ))
+
+    galleryItem.appendChild(createGalleryItem(
+        'url(../dist/images/gallery-images/gallery16.jpg)'
     ))
 
 

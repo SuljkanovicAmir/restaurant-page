@@ -1,5 +1,5 @@
 import initializeWebsite from './website'
-import "../src/style.css"
+import "../dist/style.css"
 
 
 
