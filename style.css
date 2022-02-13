@@ -1,0 +1,511 @@
+@font-face {
+    font-family: 'Unica One';
+    src: url('UnicaOne-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'News Cycle';
+    src: url('news-cycle.regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    background-color: #ffe6e6d9;
+}
+
+.background {
+    background-color: #f9d5d5;
+    width: 16%;
+    height: 100vh;
+    min-width: 250px;
+    position: relative;
+    z-index: -1;
+}
+
+.nav-div {
+    background-color: #f9d5d5;
+    width: 16%;
+    height: 100vh;
+    min-width: 250px;
+    padding-top: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+}
+
+.nav-div h1 {
+    font-size: 2.2rem;
+    word-break: break-word;
+    font-family: 'Unica One', sans-serif;
+    margin-bottom: 110px;
+    text-transform: uppercase;
+}
+
+
+.nav-div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    list-style-type: none;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-family: 'Unica One', sans-serif;
+    cursor: pointer;
+}
+
+.ul-list a {
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.2s linear;
+    -webkit-transition: border-color 0.2s linear;
+}
+
+span {
+    border-bottom: 1px solid #949494;
+    width: 82px;
+    margin: 30px 0px 15px 0px;
+
+}
+
+#content {
+    width: 84%;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 30%) 0px 0px 5px;
+    cursor: pointer;
+
+}
+
+.nav-div p {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 1rem;
+}
+.socials {
+    display: flex;
+    gap: 13px;
+    position: relative;
+    bottom: 0%;
+    padding-bottom: 20px;
+   
+}
+.socials img {
+    width: 42px;
+    height: 42px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.home-div {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    padding: 30px;
+    gap: 20px;
+    background-color: #f9d5d5;
+}
+
+.left-gallery,
+.right-top-gallery,
+.right-bottom-gallery {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.left-gallery {
+    grid-row-start:  1;
+    grid-row-end: span 2;
+    background-image: url('./images/lefts.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.right-top-gallery {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-image: url('./images/pizza3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.right-bottom-gallery {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-image: url('./images/burger.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-div {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffe6e6d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Unica One', sans-serif;
+    font-size: 7rem;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow-x: auto;
+}
+
+
+.menu-title {
+    font-family: 'Unica One', sans-serif;
+    font-size: 1.6rem;
+    margin-top: 90px;
+    margin-bottom: 10px;
+}
+
+
+.menu-item {
+    font-family: 'News Cycle', sans-serif;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+
+
+.price {
+    border-top: 1px solid darkgray;
+    display: inline-block;
+    margin-top: 9px;
+}
+
+.menu-item :first-child {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+
+.contact-div {
+    padding-top: 80px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Unica One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+    padding-bottom: 150px;
+}
+
+
+
+
+.adress-div  {
+    margin-top: 140px;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-family: 'Unica One', sans-serif;
+    text-align: left;
+    width: 760px;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.adress-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;    
+    font-weight: 100;
+
+}
+
+.adress-text {
+    white-space: pre;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 1.4rem;
+}
+
+
+.map-div {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   font-size: 2rem;
+}
+
+.map {
+    border-radius: 10px;
+    border: 0px;
+    height: 170px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 0px 10px;
+    width: 260px;
+}
+
+.contact-span {
+    display: inline-block;
+    width: 980px;
+    border-bottom: 2px solid #949494;
+    margin: 60px 0px 60px 0px;
+
+}
+.second-div,
+.third-div {
+    display: flex;
+    width: 760px;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.work-time,
+.reservation {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 100;
+    font-family: 'Unica One', sans-serif;
+}
+
+.work-description,
+.reservation-text {
+    white-space: pre;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+.reservation-button {
+    background-color: #c20057;
+    font-family: "Unica One",Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #ffe6e6;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 12px;
+    border: 1px solid #c20057;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
+
+.gallery-div  {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffe6e6d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+
+.gallery-item  {
+    display: grid;
+    grid-gap:  5px;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 150px;
+}
+
+
+.gallery-image   {
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 0px 10px;
+    transition: all 0.2s linear;
+    -webkit-transition:  all 0.2s linear;
+}
+
+
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 2.4rem;
+    font-family: 'Unica One', sans-serif;
+}
+
+
+.ul-list a:hover {
+    color: #c20057;
+    border-bottom: 3px solid #c20057;
+ 
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+}
+
+
+.gallery-image:hover {
+    transform: scale(1.4);
+    transition: all 0.2s linear;
+    -webkit-transition:  all 0.2s linear;
+}
+
+.reservation-button:hover {
+    background-color: #f9d5d5;
+    color: black;
+}
+
+
+
+
+
+
+
+/*______________________
+
+
+     MEDIA SCREENS BELOW 
+
+
+ _________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+body {
+    display: flex;
+    flex-direction: column;
+}
+#content {
+    width: unset;
+}
+.background {
+    display: none;
+}
+.nav-div h1 {
+    margin-bottom: 50px;
+}
+.nav-div span {
+    margin: 10px 0px;
+}
+.nav-div {
+    width: 100%;
+    position: unset;
+    min-height: 100vh;
+    height: unset;
+}
+
+.left-gallery {
+    grid-row-start: 1;
+    grid-column-end: span 2;
+    grid-row-end: unset;
+}
+.right-top-gallery {
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: unset;
+}
+.right-bottom-gallery {
+    display: none;
+}
+.menu {
+    font-size: 4.5rem;
+    padding: 50px 30px;
+}
+.menu-title {
+    font-size: 1.4rem;
+}
+.gallery-item {
+    grid-template-columns: repeat(2, auto);
+}
+.gallery-image {
+    width: 170px;
+    height: 170px;
+}
+.gallery-image:nth-child(2n + 1):hover {
+    transform: scale(1.4) translate(20px, -22px);
+
+}
+.gallery-image:nth-child(2n):hover {
+    transform: scale(1.4)translate(-20px, -22px);
+
+}
+.contact-div {
+    padding: 70px 30px;
+}
+
+
+
+.adress-div {
+    margin-top: 90px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    font-size: 1.5rem;
+    font-family: 'Unica One', sans-serif;
+    text-align: left;
+    width: unset;
+}
+.adress {
+    gap: unset;
+}
+.contact-span {
+    width: 80%;
+
+}
+.second-div,
+.third-div {
+    width: unset;
+}
+
+}
