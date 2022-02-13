@@ -32,7 +32,7 @@ const galleryButton = document.querySelector(".gallery-button");
 galleryButton.classList.add("nav-buttons");
 galleryButton.addEventListener("click", (e) => {
   if (e.target.classList.contains("active")) return;
-  setActiveButton(contactButton);
+  setActiveButton(galleryButton);
   galleryPage();
 });
 
