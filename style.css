@@ -509,3 +509,31 @@ body {
 }
 
 }
+
+
+@media screen and (max-width: 450px) and (max-device-height: 850px ) {
+    .logo {
+        width: 115px;
+    }
+    .nav-div {
+        width: 100%;
+        position: unset;
+        min-height: 100vh;
+        height: unset;
+        padding-top: 25px;
+        gap: 5px;
+    }
+
+    .nav-div h1 {
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+    .nav-div ul {
+        gap: 10px;
+        font-size: 1.5rem;
+    }
+    .nav-div span {
+        margin: 9px 0px;
+    }
+
+}
