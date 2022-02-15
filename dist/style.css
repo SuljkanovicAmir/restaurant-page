@@ -575,7 +575,7 @@ body {
 }
 
 
-@media screen and (max-width: 450px) and (max-device-height: 850px ) {
+@media screen and (max-width: 450px) and (max-device-height: 750px ) {
     .logo {
         width: 115px;
     }
@@ -599,5 +599,10 @@ body {
     .nav-div span {
         margin: 9px 0px;
     }
-
+    .footer {
+        display: flex;
+    }
+    .footer button {
+        display: flex;
+    }
 }
