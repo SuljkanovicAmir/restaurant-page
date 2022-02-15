@@ -424,6 +424,20 @@ span {
 }
 
 
+.burger {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*______________________
@@ -460,6 +474,10 @@ body {
 }
 .nav-div h1 {
     margin-bottom: 50px;
+    display: none;
+}
+.logo {
+    display: none;
 }
 .nav-div span {
     margin: 10px 0px;
@@ -469,6 +487,8 @@ body {
     position: unset;
     min-height: 100vh;
     height: unset;
+    padding-top: 220px;
+
 }
 
 .left-gallery {
@@ -553,7 +573,6 @@ body {
     align-items: center;
     gap: 15px;
     background-color: #f9d5d5  ;
-   
 }
 .footer button {
     display: flex;
@@ -572,7 +591,66 @@ body {
 .menu {
     overflow-x: unset;
 }
+.burger {
+    display: flex;
+    background-color: #f9d5d5;
+    border: none;
+    right: 5%;
+    position: absolute;
 }
+
+.burger img {
+    background-color: #f9d5d5;
+    width: 30px;
+    height: auto;
+}
+.header {
+    display: flex;
+    height: 60px;
+    border-bottom: 1px solid #c7aaaa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    gap: 15px;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #f9d5d5;
+    align-items: center;
+    z-index: 3;
+}
+.header-title {
+    height: 90px;
+    position: fixed;
+    display: flex;
+}
+.burger-img {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+.header-div  {
+    display: flex;
+    height: 150px;
+    background-color: #f9d5d5;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 7%;
+    font-family: 'Unica One', sans-serif;
+}
+}
+.header-div h1 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+}
+
+}
+
+
+
+
+
 
 
 @media screen and (max-width: 450px) and (max-device-height: 750px ) {
@@ -584,7 +662,7 @@ body {
         position: unset;
         min-height: 100vh;
         height: unset;
-        padding-top: 25px;
+        padding-top: 180px;
         gap: 5px;
     }
 
