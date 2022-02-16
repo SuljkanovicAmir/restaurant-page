@@ -51,7 +51,11 @@ burgerMenu.addEventListener('click', () => {
   const navDiv = document.querySelector('.nav-div');
   navDiv.classList.toggle('show');
 });
-
+const navExit = document.querySelector('.nav-exit');
+navExit.addEventListener('click', () => {
+  const navDiv = document.querySelector('.nav-div');
+  navDiv.classList.toggle('show');
+});
 
 
 function setActiveButton(button) {
