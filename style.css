@@ -396,7 +396,7 @@ span {
 
 .footer {
     display: none;
-    height: 60px;
+    height: 66px;
     border-top: 1px solid #c7aaaa;
     position: fixed;
     bottom: 0;
@@ -413,22 +413,46 @@ span {
     border: 1px solid black;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 35px;
-    padding: 0px 15px;
+    padding: 3px 15px;
     text-transform: uppercase;
     font-family: 'Unica One', sans-serif;
     color: black;
     background-color: #f9d5d5;
     border-radius: 2px;
 }
-
+.footer-nav {
+    width: 90%;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 15px;
+    margin-top: 150px;
+}
+.footer-nav button {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    line-height: 35px;
+    padding: 6px 14px;
+    text-transform: uppercase;
+    font-family: 'Unica One', sans-serif;
+    color: black;
+    background-color: #f9d5d5;
+    border-radius: 2px;
+   
+}
 
 .burger {
     display: none;
 }
 
-
+.header-div {
+    display: none;
+}
 
 
 
@@ -477,10 +501,11 @@ body {
     display: none;
 }
 .logo {
-    display: none;
+    display: flex;
+    margin-bottom: 50px;
 }
 .nav-div span {
-    margin: 10px 0px;
+    display: none;
 }
 .nav-div {
     width: 100%;
@@ -491,15 +516,27 @@ body {
     display: none;
 }
 .nav-div.show {
-    width: 60%;
+    max-width: 250px;
     position: fixed;
     min-height: 100vh;
     height: unset;
-    padding-top: 220px;
+    padding-top: 50px;
     display: flex;
     right: 0;
+    z-index: 3;
+    text-align: left;
+    overflow-x: auto;
 }
-
+.ul-list {
+    width: 85%;
+    overflow-x: auto;
+}
+.ul-list a {
+    display: block;
+    padding: 15px 15px;
+    border-bottom: 1px solid #c7aaaa;
+  
+}
 .left-gallery {
     grid-row-start: 1;
     grid-column-end: span 2;
@@ -575,30 +612,9 @@ body {
 }
 .footer {
     display: flex;
-    height: 60px;
-    border-top: 1px solid #c7aaaa;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    background-color: #f9d5d5  ;
 }
 .footer button {
     display: flex;
-    border: 1px solid black;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    line-height: 35px;
-    padding: 0px 15px;
-    text-transform: uppercase;
-    font-family: 'Unica One', sans-serif;
-    color: black;
-    background-color: #f9d5d5;
-    border-radius: 2px;
 }
 .menu {
     overflow-x: unset;
@@ -651,11 +667,21 @@ body {
     top: 4%;
     font-family: 'Unica One', sans-serif;
 }
-}
+
 .header-div h1 {
     text-transform: uppercase;
     font-size: 2.4rem;
 }
+.nav-div p {
+    display: none;
+}
+.socials {
+    display: none;
+}
+.footer-nav {
+    display: flex;
+}
+
 
 }
 
@@ -669,22 +695,32 @@ body {
     .logo {
         width: 115px;
     }
-    .nav-div {
-        width: 100%;
-        position: unset;
+    .nav-div.show {
+        max-width: 250px;
+        position: fixed;
         min-height: 100vh;
         height: unset;
-        padding-top: 180px;
-        gap: 5px;
+        padding-top: 50px;
+        display: flex;
+        right: 0;
+        z-index: 3;
+        text-align: left;
+        overflow: auto;
     }
-
+    .ul-list {
+        width: 85%;
+        overflow-x: auto;
+        display: block;
+    }
+    .ul-list a {
+        display: block;
+        padding: 15px 15px;
+        border-bottom: 1px solid #c7aaaa;
+      
+    }
     .nav-div h1 {
         margin-bottom: 30px;
         font-size: 2rem;
-    }
-    .nav-div ul {
-        gap: 10px;
-        font-size: 1.5rem;
     }
     .nav-div span {
         margin: 9px 0px;
