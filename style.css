@@ -488,7 +488,16 @@ body {
     min-height: 100vh;
     height: unset;
     padding-top: 220px;
-
+    display: none;
+}
+.nav-div.show {
+    width: 60%;
+    position: fixed;
+    min-height: 100vh;
+    height: unset;
+    padding-top: 220px;
+    display: flex;
+    right: 0;
 }
 
 .left-gallery {
@@ -510,6 +519,9 @@ body {
     padding: 50px 40px;
     height: unset;
     min-height: 100vh;
+}
+.home-div {
+    padding: 200px 30px 30px 30px;
 }
 .menu-title {
     font-size: 1.2rem;
@@ -630,13 +642,13 @@ body {
 }
 .header-div  {
     display: flex;
-    height: 150px;
+    height: 160px;
     background-color: #f9d5d5;
     position: absolute;
     width: 100%;
     justify-content: center;
     align-items: center;
-    top: 7%;
+    top: 4%;
     font-family: 'Unica One', sans-serif;
 }
 }
