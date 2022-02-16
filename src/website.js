@@ -23,7 +23,7 @@ menuButton.addEventListener("click", (e) => {
   setActiveButton(menuButton);
   menuPage();
   let scrollMenu = document.querySelector('.menu');
-  scrollMenu.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  scrollMenu.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 });
 
 const contactButton = document.querySelector(".contact-button");
@@ -46,7 +46,11 @@ galleryButton.addEventListener("click", (e) => {
   scrollGallery.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 });
 
-
+const burgerMenu = document.querySelector('.burger');
+burgerMenu.addEventListener('click', () => {
+  const navDiv = document.querySelector('.nav-div');
+  navDiv.classList.toggle('show');
+});
 
 
 
