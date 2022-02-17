@@ -10,6 +10,12 @@
     font-style: normal;
     font-weight: normal;
   }
+  @font-face {
+    font-family: 'Cassannet';
+    src: url('cassannet_plus_regular-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+  }
 
 
 
@@ -417,11 +423,21 @@ span {
     line-height: 35px;
     padding: 3px 15px;
     text-transform: uppercase;
-    font-family: 'Unica One', sans-serif;
+    font-family: 'Cassannet';
     color: black;
     background-color: #f9d5d5;
     border-radius: 2px;
 }
+
+.header-div {
+    display: none;
+}
+.header {
+    display: none;
+}
+
+
+
 
 .nav-button {
     display: none;
@@ -432,10 +448,10 @@ span {
     line-height: 35px;
     padding: 4px 14px;
     text-transform: uppercase;
-    font-family: 'Unica One', sans-serif;
+    font-family: 'Cassannet';
     color: black;
     background-color: #f9d5d5;
-    border-radius: 2px;
+    border-radius: 5px;
     width: 100%;
 }
 
@@ -449,24 +465,27 @@ span {
     display: none;
 }
 .nav-exit {
-        right: 230px;
-        top: 10px;
+        right: -5px;
+        top: 30px;
         object-fit: cover;
         position: fixed;
-        width: 40px;
-        height: 40px;
+        width: 65px;
+        height: 45px;
         background-color: black;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        display: none;
+        padding-left: 10px;
 }
 
 
 .nav-exit img {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     z-index: 4;
     filter: invert(1);
+    display: none;
 }
 
 
@@ -507,16 +526,25 @@ body {
 .background {
     display: none;
 }
-.nav-div h1 {
-    margin-bottom: 50px;
+.logo {
     display: none;
 }
-.logo {
+.logo.mobile {
     display: flex;
-    margin-bottom: 50px;
-    width: 100px;
-    height: auto;
+    width: 100%;
+    height: 120px;
+    object-fit: scale-down;
+    background-color: white;
+    border-radius: 0;
 }
+.nav-div h1 {
+    font-size: 2.6rem;
+    display: flex;
+    font-family: 'Cassannet';
+    text-align: center;
+    margin-bottom: 80px;
+}
+
 .nav-div span {
     display: none;
 }
@@ -529,25 +557,26 @@ body {
     display: none;
 }
 .nav-div.show {
-    max-width: 230px;
+    max-width: 100%;
     position: fixed;
     height: 100vh;
     min-height: 100vh;
-    padding-top: 50px;
+    padding-top: 90px;
     display: flex;
     right: 0;
     z-index: 3;
     text-align: left;
     overflow-x: auto;
-    min-width: 200px;
+    min-width: 100%;
     gap: unset;
     padding-bottom: 30px;
 }
 .nav-div ul {
-    width: 85%;
+    width: 80%;
     overflow-x: auto;
     gap: 8px;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    font-family: 'Cassannet';
 }
 .ul-list a {
     display: block;
@@ -556,40 +585,64 @@ body {
 }
 .nav-button {
     display: flex;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 .ul-list li:nth-child(5) {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .left-gallery {
     grid-row-start: 1;
     grid-column-end: span 2;
     grid-row-end: unset;
+    border-radius: 0;
+    height: 80%;
+
 }
 .right-top-gallery {
     grid-column-end: span 2;
     grid-row-start: 2;
     grid-column-start: 1;
     grid-row-end: unset;
+    display: none;
+   
 }
 .right-bottom-gallery {
     display: none;
 }
+
+.home-div {
+    padding: 220px 30px 30px 30px;
+}
+
+
 .menu {
-    font-size: 4.5rem;
-    padding: 50px 40px;
+    font-size: 4rem;
+    padding: 250px 40px 60px 40px;
     height: unset;
     min-height: 100vh;
+    font-family: 'Cassannet';
 }
-.home-div {
-    padding: 200px 30px 30px 30px;
-}
+
 .menu-title {
     font-size: 1.2rem;
-    border-bottom: 2px solid black;
+    font-family: 'Cassannet';
 }
 .menu-item {
     font-size: 1.1rem;
+}
+.menu-item h2, 
+.menu-item p {
+    color: #6d6d6d;
+}
+
+.gallery-div {
+    padding: 270px 30px 30px 30px;
+    min-height: 100vh;
+}
+
+.gallery-title {
+    font-size: 2rem;
+    font-family: 'Cassannet';
 }
 .gallery-item {
     grid-template-columns: repeat(2, auto);
@@ -607,7 +660,9 @@ body {
 
 }
 .contact-div {
-    padding: 70px 30px;
+    padding: 270px 40px 30px 40px;
+    min-height: 100vh;
+    font-family: 'Cassannet';
 }
 
 
@@ -688,14 +743,15 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    top: 4%;
-    font-family: 'Unica One', sans-serif;
+    top: 6%;
+    font-family: 'Cassannet';
+    text-align: center;
+    padding: 0 30px;
 }
 
-.header-div h1 {
-    text-transform: uppercase;
-    font-size: 2.4rem;
-}
+
+
+
 .nav-div p {
     display: none;
 }
@@ -705,8 +761,12 @@ body {
 .footer-nav {
     display: flex;
 }
-
-
+.nav-exit {
+    display: flex;
+}
+.nav-exit img {
+    display: flex;
+}
 
 }
 
