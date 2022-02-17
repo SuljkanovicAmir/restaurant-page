@@ -402,7 +402,7 @@ span {
 
 .footer {
     display: none;
-    height: 63px;
+    height: 60px;
     border-top: 1px solid #c7aaaa;
     position: fixed;
     bottom: 0;
@@ -419,9 +419,9 @@ span {
     border: 1px solid black;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 35px;
-    padding: 3px 15px;
+    padding: 0px 15px;
     text-transform: uppercase;
     font-family: 'Cassannet';
     color: black;
@@ -538,7 +538,7 @@ body {
     border-radius: 0;
 }
 .nav-div h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     display: flex;
     font-family: 'Cassannet';
     text-align: center;
@@ -561,7 +561,7 @@ body {
     position: fixed;
     height: 100vh;
     min-height: 100vh;
-    padding-top: 90px;
+    padding-top: 100px;
     display: flex;
     right: 0;
     z-index: 3;
@@ -572,10 +572,9 @@ body {
     padding-bottom: 30px;
 }
 .nav-div ul {
-    width: 80%;
-    overflow-x: auto;
+    width: 65%;
     gap: 8px;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-family: 'Cassannet';
 }
 .ul-list a {
@@ -585,7 +584,7 @@ body {
 }
 .nav-button {
     display: flex;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 .ul-list li:nth-child(5) {
     margin-bottom: 40px;
@@ -648,8 +647,8 @@ body {
     grid-template-columns: repeat(2, auto);
 }
 .gallery-image {
-    width: 170px;
-    height: 170px;
+    width: 160px;
+    height: 160px;
 }
 .gallery-image:nth-child(2n + 1):hover {
     transform: scale(1.4) translate(20px, -22px);
@@ -663,6 +662,7 @@ body {
     padding: 270px 40px 30px 40px;
     min-height: 100vh;
     font-family: 'Cassannet';
+    font-size: 2.2rem;
 }
 
 
@@ -743,7 +743,7 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    top: 6%;
+    top: 7%;
     font-family: 'Cassannet';
     text-align: center;
     padding: 0 30px;
