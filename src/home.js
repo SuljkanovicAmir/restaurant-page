@@ -7,6 +7,10 @@ function createHomePage () {
     leftGallery.classList.add('left-gallery');
     homeDiv.appendChild(leftGallery);
     
+    let span2 = document.createElement('span')
+    span2.classList.add('home-span')
+    homeDiv.appendChild(span2)
+
     let rightTop = document.createElement('div');
     rightTop.classList.add('right-top-gallery');
     homeDiv.appendChild(rightTop);
@@ -23,6 +27,10 @@ function createHomePage () {
     bottomInfo.textContent += "Hrvatska \r\n"
     bottomInfo.textContent += "+385 31 281 700"
     homeDiv.appendChild(bottomInfo);
+
+    let span = document.createElement('span')
+    span.classList.add('home-span')
+    homeDiv.appendChild(span)
 
     let bottomInfo2 = document.createElement('p');
     bottomInfo2.classList.add('info2');
