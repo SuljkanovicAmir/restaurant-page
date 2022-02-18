@@ -542,7 +542,7 @@ body {
     display: flex;
     font-family: 'Cassannet';
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
 .nav-div span {
@@ -587,14 +587,14 @@ body {
     font-size: 1.2rem;
 }
 .ul-list li:nth-child(5) {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .left-gallery {
     grid-row-start: 1;
     grid-column-end: span 2;
     grid-row-end: unset;
     border-radius: 0;
-    height: 80%;
+    min-height: 500px;
 
 }
 .right-top-gallery {
@@ -610,12 +610,18 @@ body {
 }
 
 .home-div {
+    display: flex;
+    flex-direction: column;
     padding: 220px 30px 30px 30px;
+    text-align: center;
+    min-height: 100vh;
+    height: unset;
+    gap: 40px;
 }
 
 
 .menu {
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 250px 40px 60px 40px;
     height: unset;
     min-height: 100vh;
@@ -623,7 +629,7 @@ body {
 }
 
 .menu-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: 'Cassannet';
 }
 .menu-item {
@@ -640,7 +646,7 @@ body {
 }
 
 .gallery-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Cassannet';
 }
 .gallery-item {
@@ -743,13 +749,18 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    top: 7%;
+    top: 7.1%;
     font-family: 'Cassannet';
     text-align: center;
     padding: 0 30px;
 }
 
-
+.info,
+.info2  {
+    font-family: 'Cassannet';
+    font-size: 1.2rem;
+    white-space: pre;
+}
 
 
 .nav-div p {

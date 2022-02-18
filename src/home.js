@@ -15,6 +15,21 @@ function createHomePage () {
     rightBottom.classList.add('right-bottom-gallery');
 
     homeDiv.appendChild(rightBottom);
+
+    let bottomInfo = document.createElement('p');
+    bottomInfo.classList.add('info');
+    bottomInfo.textContent += "Ul. kralja Zvonimira,  \r\n"
+    bottomInfo.textContent += "Bilje 31327,  \r\n"
+    bottomInfo.textContent += "Hrvatska \r\n"
+    bottomInfo.textContent += "+385 31 281 700"
+    homeDiv.appendChild(bottomInfo);
+
+    let bottomInfo2 = document.createElement('p');
+    bottomInfo2.classList.add('info2');
+    bottomInfo2.textContent += "PONEDJELJAK - PETAK\r\n"
+    bottomInfo2.textContent += "9:00AM - 11:00PM\r\n"
+    homeDiv.appendChild(bottomInfo2);
+
     return homeDiv;
 }
 

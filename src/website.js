@@ -15,6 +15,23 @@ const homeButton = document.querySelector(".home-button");
     navDiv.classList.toggle('show');
   });
 
+const menuIcon = document.querySelector('.menu-icon');
+menuIcon.addEventListener('click', () => {
+  menuPage();
+});
+const workIcon = document.querySelector('.worktime-icon');
+workIcon.addEventListener('click', () => {
+  contactPage();
+});
+const callIcon = document.querySelector('.call-icon');
+callIcon.addEventListener('click', () => {
+  contactPage();
+});
+const locationIcon = document.querySelector('.location-icon');
+locationIcon.addEventListener('click', () => {
+  contactPage();
+});
+
 
 const menuButton = document.querySelector(".menu-button");
 menuButton.classList.add("nav-buttons");
