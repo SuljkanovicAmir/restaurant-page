@@ -46,7 +46,7 @@ body {
     background-color: #f9d5d5;
     width: 16%;
     height: 100vh;
-    min-width: 250px;
+    min-width: 308px;
     padding-top: 35px;
     text-align: center;
     display: flex;
@@ -86,7 +86,7 @@ span {
     border-bottom: 1px solid #949494;
     width: 82px;
     margin: 30px 0px 15px 0px;
-
+    display: none;
 }
 
 #content {
@@ -623,6 +623,8 @@ body {
     height: unset;
     gap: 25px;
     align-items: center;
+    margin-top: 20px;
+    background-color: #ffe9e9;
 }
 .home-span {
     display: inline-block;
@@ -772,7 +774,7 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    top: 7.3%;
+    top: 6.3%;
     font-family: 'Cassannet';
     text-align: center;
     padding: 0 30px;
