@@ -625,6 +625,8 @@ body {
     align-items: center;
     margin-top: 20px;
     background-color: #ffe9e9;
+    overflow-x: hidden;
+    margin-bottom: 40px;
 }
 .home-span {
     display: inline-block;
@@ -635,7 +637,7 @@ body {
 .info,
 .info2  {
     font-family: 'News Cycle', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     white-space: pre;
     display: flex;
     justify-content: center;
@@ -653,7 +655,7 @@ body {
 }
 
 .menu-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Cassannet';
 }
 .menu-item {
@@ -661,7 +663,7 @@ body {
 }
 .menu-item h2, 
 .menu-item p {
-    color: #6d6d6d;
+    color: #573b3b;
 }
 
 .gallery-div {
@@ -693,6 +695,8 @@ body {
     min-height: 100vh;
     font-family: 'Cassannet';
     font-size: 2.2rem;
+    align-items: flex-start;
+    overflow-x: hidden;
 }
 
 
@@ -703,7 +707,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 70px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Unica One', sans-serif;
     text-align: left;
     width: unset;
@@ -711,14 +715,29 @@ body {
 .adress {
     gap: unset;
 }
+.adress-title,
+.work-time,
+.reservation {
+    font-size: 2.2rem;
+}
+.adress-text,
+.work-description,
+.reservation-text {
+    font-size: 1.2rem;
+}
 .contact-span {
-    width: 80%;
-
+    width: 140%;
+    margin: 60px 0px 60px -60px;
 }
 .second-div,
 .third-div {
     width: unset;
 }
+
+
+
+
+
 .footer {
     display: flex;
 }
@@ -774,7 +793,7 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    top: 6.3%;
+    top: 60px;
     font-family: 'Cassannet';
     text-align: center;
     padding: 0 30px;
