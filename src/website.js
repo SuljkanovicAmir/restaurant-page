@@ -27,10 +27,13 @@ const callIcon = document.querySelector('.call-icon');
 callIcon.addEventListener('click', () => {
   contactPage();
 });
-const locationIcon = document.querySelector('.location-icon');
+/*const locationIcon = document.querySelector('.location-icon');
 locationIcon.addEventListener('click', () => {
   contactPage();
-});
+});*/
+
+
+
 
 
 const menuButton = document.querySelector(".menu-button");

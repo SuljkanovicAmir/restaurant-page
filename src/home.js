@@ -38,6 +38,35 @@ function createHomePage () {
     bottomInfo2.textContent += "9:00AM - 11:00PM\r\n"
     homeDiv.appendChild(bottomInfo2);
 
+
+    
+    let image1 = document.createElement('img')
+    image1.classList.add('mySlides')
+    image1.style.backgroundImage = 'url(./images/gallery-images/gallery3.jpg)'
+    leftGallery.appendChild(image1)
+
+    let image2 = document.createElement('img')
+    image2.classList.add('mySlides')
+    image2.style.backgroundImage = 'url(./images/gallery-images/gallery8.jpg)'
+    leftGallery.appendChild(image2)
+
+    let image3 = document.createElement('img')
+    image3.classList.add('mySlides')
+    image3.style.backgroundImage = 'url(./images/gallery-images/gallery5.jpg)'
+    leftGallery.appendChild(image3)
+
+    let image4 = document.createElement('img')
+    image4.classList.add('mySlides')
+    image4.style.backgroundImage = 'url(./images/gallery-images/gallery20.jpg)'
+    leftGallery.appendChild(image4)
+
+    let image5 = document.createElement('img')
+    image5.classList.add('mySlides')
+    image5.style.backgroundImage = 'url(./images/gallery-images/gallery19.jpg)'
+    leftGallery.appendChild(image5)
+    
+
+
     return homeDiv;
 }
 
@@ -45,7 +74,30 @@ function homePage () {
     let contentDiv = document.querySelector('#content');
     contentDiv.textContent = "";
     contentDiv.appendChild(createHomePage());
+    
+    let myIndex = 0;
+    createGallerySlide()
+    
+    function createGallerySlide() {
+        
+        let x = document.querySelectorAll(".mySlides");
+        let i;
+        for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+        setTimeout(createGallerySlide, 3500); 
+      }
+    
 }
+
+
+
+
+
+
 
 export default homePage;
 
