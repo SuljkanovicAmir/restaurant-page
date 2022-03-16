@@ -143,9 +143,17 @@ span {
 .left-gallery {
     grid-row-start:  1;
     grid-row-end: span 2;
-    background-image: url('./images/lefts.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+.mySlides {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
 }
 
 .right-top-gallery {
@@ -349,7 +357,7 @@ span {
 .gallery-item  {
     display: grid;
     grid-gap:  5px;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
     justify-content: center;
     align-content: center;
     padding-bottom: 150px;
@@ -412,9 +420,9 @@ span {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    background-color: #f9d5d5  ;
-   
+    background-color: #f9d5d5;
 }
+
 .footer button {
     display: none;
     border: 1px solid black;
@@ -600,16 +608,27 @@ body {
     grid-row-end: unset;
     border-radius: 0;
     min-height: 450px;
-
+    position: relative;
 }
+
+.mySlides {
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: unset;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+
 .right-top-gallery {
     grid-column-end: span 2;
     grid-row-start: 2;
     grid-column-start: 1;
     grid-row-end: unset;
     display: none;
-   
 }
+
 .right-bottom-gallery {
     display: none;
 }
@@ -726,8 +745,8 @@ body {
     font-size: 1.2rem;
 }
 .contact-span {
-    width: 140%;
-    margin: 60px 0px 60px -60px;
+    width: 100%;
+    margin: 60px 0px 60px 0px;
 }
 .second-div,
 .third-div {
@@ -868,5 +887,51 @@ body {
     }
     .footer button {
         display: flex;
+    }
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 1400px)  {
+    .nav-div,
+    .background {
+        min-width: 240px;
+    }
+}
+
+@media screen and (min-width: 1115px) and (max-width: 1300px)  {
+    .gallery-image {
+            width: 240px;
+            height: 240px;
+    }
+}
+@media screen and (min-width: 910px) and (max-width: 1115px)  {
+    .gallery-image {
+            width: 200px;
+            height: 200px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 910px)  {
+    .gallery-item {
+        grid-template-columns: repeat(2, auto);
+    }
+    .gallery-image {
+            width: 180px;
+            height: 180px;
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 650px) {
+    .nav-div,
+    .background {
+        min-width: 180px;
+    }
+    .nav-div h1 {
+        font-size: 1.6rem;
+    }
+    .nav-div ul {
+        font-size: 1.4rem;
+    }
+    .logo {
+        width: 100px;
     }
 }
