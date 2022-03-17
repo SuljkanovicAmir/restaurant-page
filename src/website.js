@@ -97,8 +97,7 @@ function setActiveButton(button) {
     homePage();
   }
 
-  
-
+ 
 
 
 

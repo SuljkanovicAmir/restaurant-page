@@ -2,6 +2,7 @@
 function createMenu() {
     const menu = document.createElement("div");
     menu.classList.add("menu");
+
     
     menu.textContent = "JELOVNIK"
 
@@ -172,7 +173,7 @@ function createMenu() {
     titleName.textContent = name;
 
     menuTitle.appendChild(titleName)
-
+    menuTitle.setAttribute("data-aos", "fade-up")
     return menuTitle;
   }
 
@@ -191,10 +192,11 @@ function createMenu() {
     foodPrice.textContent = price;
     foodPrice.classList.add('price')
     
+    
     menuItem.appendChild(foodName);
     menuItem.appendChild(foodDescription);
     menuItem.appendChild(foodPrice);
-
+    menuItem.setAttribute("data-aos", "fade-up")
     return menuItem;
   }
   

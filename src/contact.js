@@ -3,7 +3,6 @@ import { first } from "lodash";
 function createContactUs () {
     let contact = document.createElement('div');
     contact.classList.add('contact-div');
-
     contact.textContent = "KONTAKTIRAJTE NAS"
 
 
@@ -11,6 +10,7 @@ function createContactUs () {
     firstDiv.classList.add('adress-div')
     let adressDiv = document.createElement('div')
     adressDiv.classList.add('adress');
+    firstDiv.setAttribute("data-aos", "fade-up")
 
     let adressTitle = document.createElement('h2');
     adressTitle.classList.add('adress-title');
@@ -29,7 +29,7 @@ function createContactUs () {
 
     let span = document.createElement('span')
     span.classList.add('contact-span')
-
+    span.setAttribute("data-aos", "fade-up")
 
 
 
@@ -52,6 +52,7 @@ function createContactUs () {
     workTime.classList.add('work-time');
     workTime.textContent = "RADNO VRIJEME"
     secondDiv.appendChild(workTime)
+    secondDiv.setAttribute("data-aos", "fade-up")
 
     let workTimeDescription = document.createElement('p');
     workTimeDescription.classList.add('work-description');
@@ -61,10 +62,12 @@ function createContactUs () {
 
     let span2 = document.createElement('span')
     span2.classList.add('contact-span')
+    span2.setAttribute("data-aos", "fade-up")
 
 
     let thirdDiv = document.createElement('div');
     thirdDiv.classList.add('third-div')
+    thirdDiv.setAttribute("data-aos", "fade-up")
 
     let reservation = document.createElement('h2');
     reservation.classList.add('reservation');

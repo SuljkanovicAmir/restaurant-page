@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Čingi Lingi čarda</title>
-   
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body>
+    
     <div class="header">
             <a><img class="burger-img menu-icon" src="./images/header/menu.png"></a>
             <a><img class="burger-img worktime-icon" src="./images/header/worktime.svg"></a>
@@ -51,12 +53,21 @@
     </div>
 
 
-    <div id="content">
+    <div id="content" >
         <script src="main.js"></script>
     </div>
     <div class="footer">
         <button>Rezervacija</button>
         <button>Narudžba</button>
     </div>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js">
+    </script>
+    <script>AOS.init({
+         duration: 1000,
+         delay: 100,
+    });</script>
 </body>
+
+
 </html>
