@@ -73,6 +73,7 @@ function createHomePage () {
 function homePage () {
     let contentDiv = document.querySelector('#content');
     contentDiv.textContent = "";
+    document.body.scrollTop = 0;
     contentDiv.appendChild(createHomePage());
     
     let myIndex = 0;

@@ -126,6 +126,7 @@ function createGalleryItem(image) {
 function galleryPage () {
     let contentDiv = document.querySelector('#content');
     contentDiv.textContent = "";
+    document.body.scrollTop = 0;
     contentDiv.appendChild(createGalleryPage());
 }
 

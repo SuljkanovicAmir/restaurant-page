@@ -100,7 +100,7 @@ function createContactUs () {
 function contactPage () {
     let contentDiv = document.querySelector('#content');
     contentDiv.textContent = "";
-
+    document.body.scrollTop = 0;
     contentDiv.appendChild(createContactUs());
 }
 
