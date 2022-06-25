@@ -16,6 +16,13 @@
     font-style: normal;
     font-weight: normal;
   }
+  @font-face {
+    font-family: 'Staatliches';
+    src: url('Staatliches-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
 
 
 
@@ -24,7 +31,6 @@
     padding: 0%;
     margin: 0;
     text-decoration: none;
-    color: black;
     scroll-behavior: smooth;
 }
 
@@ -32,6 +38,91 @@ body {
     display: flex;
     background-color: #ffe6e6d9;
 }
+.loading {
+    z-index: 99999;
+    background-color: #f9d5d5f5;
+    position: fixed;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    font-family: 'Staatliches';
+    animation: backgroundChange .6s linear 3s forwards,
+               fadeOut .9s linear 6s forwards;
+}
+.load-text {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 9vmax;
+    display: flex;
+    width: fit-content;
+    animation: colorChange .5s linear 3s forwards,
+               scaleTextAfter .1s linear 2.9s forwards;
+  }
+
+  .loaded-text {
+    transform: scale(1.5);
+    animation: scaleText .5s linear .5s forwards;
+  }
+  
+  .loading-text {
+    width: 0;
+    overflow: hidden;
+    animation: expand .5s linear 1.5s forwards;
+  }
+
+  @keyframes scaleText {
+    from {transform: scale(1.5)}
+    to {transform: scale(1)}
+  }
+
+  @keyframes scaleTextAfter {
+    0% {
+        transform: scale(1);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+  }
+  
+  @keyframes expand {
+    from {width: 0;}
+    to {width: 17vmax;}
+  }
+  
+  @keyframes backgroundChange {
+    from {background-color: white}
+    to {
+        background-color: rgba(87, 54, 54, 0.911);
+        backdrop-filter: blur(10px);
+    }
+  }
+  
+  @keyframes colorChange {
+    from {color: black}
+    to {color: white}
+  }
+  
+  @keyframes fadeOut {
+    from {opacity: 1}
+    to {
+      opacity: 0; 
+      z-index: -1;
+    }
+  }
+  
 
 .background {
     background-color: #f9d5d5;
@@ -563,11 +654,16 @@ body {
 }
 .nav-div {
     width: 100%;
-    position: unset;
+    position: fixed;
     min-height: 100vh;
     height: unset;
-    padding-top: 220px;
-    display: none;
+    transform: translateX(120%);
+    position: fixed;
+    transition: .8s ease-in-out;
+    z-index: 3;
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 30px;
 }
 .nav-div.show {
     max-width: 100%;
@@ -583,6 +679,8 @@ body {
     min-width: 100%;
     gap: unset;
     padding-bottom: 30px;
+    transform: translateX(0);
+    transition: .8s ease-in-out;
 }
 .nav-div ul {
     width: 65%;
