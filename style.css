@@ -48,8 +48,8 @@ body {
     height: 100%;
     backdrop-filter: blur(10px);
     font-family: 'Staatliches';
-    animation: backgroundChange .6s linear 3s forwards,
-               fadeOut .9s linear 6s forwards;
+    animation: backgroundChange .6s ease-in-out 3s forwards,
+               fadeOut .5s linear 4.5s forwards;
 }
 .load-text {
     left: 50%;
